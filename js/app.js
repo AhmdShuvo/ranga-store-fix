@@ -28,22 +28,7 @@
                 <h5>Total Ratings : ${product.rating.count}</h5>
               <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="cart-btn">add to cart</button>
               <button id="details-btn" class="details-btn">Details</button>
-            </div>`
-            
-            
-            // `<div class="single-product m-1">
-            //   <div>
-            // <img class="product-image" src=${image}></img>
-            //   </div>
-            //   <div class="div">
-            //   <h3>${product.title}</h3>
-            //   <p>Category: ${product.category}</p>
-            //   <h2>Price: $ ${product.price}</h2>
-            //   <h5>Rating : ${product.rating.rate}</h5>
-            //   <h5>Total Ratings : ${product.rating.count}</h5>
-            //   <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="cart-btn">add to cart</button>
-            //   <button id="details-btn" class="details-btn">Details</button></div></div>
-            //   `;
+            </div>`;
             document.getElementById("all-products").appendChild(div);
           }
         };
