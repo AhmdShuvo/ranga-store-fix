@@ -14,6 +14,9 @@
   outline: none;
   border: none;
 }
+.text-color{
+  color: gold;
+}
 
 .fa-search{
   color:white;
