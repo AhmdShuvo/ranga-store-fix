@@ -8,31 +8,45 @@
   <title>ONLINE store</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- google Montserrat  font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+   <!-- FONT AWSOME ICON 
+   -->
+   <script src="https://kit.fontawesome.com/780f7a6863.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-  <header></header>
+<body class="body">
+
+  <!-- HEADER  -->
+  <header>
+
+
+  </header>
+
+  <!-- main section  -->
   <main class="main">
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
+
+        <!-- Seacrch FIELd  -->
+    <div class="search-field d-flex justify-content-center">
+      <div class="input-group mb-3 w-50 m-3 ">
+        <input type="text" class="form-control " placeholder="Search For products "aria-describedby="button-addon2">
+
+        <!-- search BUtton  -->
+        <button class="btn btn-outline-secondary btn-success text-white fs-4 p-1" type="button" id="button-addon2">Search <i class="fas fa-search bg-success"></i>  </button>
       </div>
     </div>
+
+         <!-- My Cart -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <!-- <h1></h1> -->
+         
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
@@ -48,6 +62,7 @@
               </tr>
             </thead>
             <tbody>
+                       <!-- Total Products to car  -->
               <tr>
                 <th>Total Added-Products:</th>
                 <td> <span id="total-Products">0</span></td>
@@ -55,24 +70,30 @@
                 <td></td>
               </tr>
               <tr>
+
+                    <!-- Total Added Products Price  -->
                 <th>Price:</th>
                 <td>$ <span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr> 
+                <!-- Total delivery Charges  -->
                 <th>Delivery-Charge:</th>
                 <td>$ <span id="delivery-charge">20.00</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
+                    <!-- Tax and Vat  -->
                 <th>Total-Tax:</th>
                 <td>$ <span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr> 
+
+                   <!-- Total Prices with tax and delivery charge  -->
                 <th scope="row">Total</th>
                 <td colspan="2">$ <span id="total">0</span></td>
                 <td></td>
@@ -80,6 +101,8 @@
             </tbody>
           </table>
           <div class="parces text-center">
+
+             <!-- Order NOw button  -->
             <button class="btn btn-primary text-center">Buy Now</button>
           </div>
         </div>
